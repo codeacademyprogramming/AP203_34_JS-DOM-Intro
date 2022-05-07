@@ -1,0 +1,43 @@
+
+*{
+    box-sizing: border-box;
+}
+.tab-menu{
+    display: flex;
+}
+.tab-menu .menu-item{
+    list-style: none;
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background-color: rgb(225, 223, 223);
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.tab-menu .menu-item:hover{
+    border: 1px solid;
+}
+
+.tab-menu .menu-item.active{
+    background-color: darkgray;
+    border: 1px solid;
+}
+
+.content{
+    position: relative;
+}
+
+.content .content-item{
+    list-style: none;
+    width: 450px;
+    height: 100px;
+    border: 1px solid;
+    position: absolute;
+    display: none;
+}
+
+.content .content-item.show{
+    display: block;
+}
